@@ -9,6 +9,8 @@ donate1.addEventListener('click',function(){
     alert('Enter a  positive number')
     return
       }
+      const modal = document.getElementById('my_modal_1');
+  modal.showModal(); 
    
    const total =(donateNd+donateNoakhali);
    const remaning =donateBd-total
@@ -43,7 +45,9 @@ donate2.addEventListener('click',function(){
     alert('Enter a  positive number')
     return
       }
-   
+      const modal = document.getElementById('my_modal_1');
+      modal.showModal();
+
    const total =(donatefeni+donateFd);
    console.log(total)
    const remaning =donateBd-total
@@ -82,6 +86,8 @@ donate3.addEventListener('click',function(){
     return;
 }
 
+const modal = document.getElementById('my_modal_1');
+modal.showModal();
    
    const total =(donatequata+donateQ);
    console.log(total)
@@ -138,25 +144,6 @@ document.getElementById('main-section').classList.remove('hidden')
 
 
 
-// modal js 
-// Quata modal 
-document.getElementById('donate3').addEventListener('click', function() {
-  const modal = document.getElementById('my_modal_1');
-  modal.showModal(); // Show the modal when the button is clicked
-});
 
-
-
-// feni modal 
-document.getElementById('feni').addEventListener('click', function() {
-  const modal = document.getElementById('my_modal_1');
-  modal.showModal(); // Show the modal when the button is clicked
-});
-
-// noakhali modal 
-document.getElementById('donate1').addEventListener('click', function() {
-  const modal = document.getElementById('my_modal_1');
-  modal.showModal(); // Show the modal when the button is clicked
-});
 
 

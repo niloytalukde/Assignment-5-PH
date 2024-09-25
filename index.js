@@ -97,14 +97,17 @@ modal.showModal();
    document.getElementById('quata').innerText = total;
 
   //  Quata donate 
+ 
 
   const historyItem =document.createElement("div");
    historyItem.className ='bg-white p-5 text-xl shadow-lg mt-10 font-bold'
    historyItem.innerHTML=`
    <p>${donateQ} BDT Donate for Quata Protest,Bangladesh</p>
-   <p>${new Date().toLocaleDateString ()} </p>
+   <p> ${new Date().toLocaleDateString ()}</p>
    
    `
+
+
    const historyList = document.getElementById('history-classlist');
    historyList.insertBefore( historyItem,historyList.firstChild)
 
